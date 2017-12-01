@@ -1,0 +1,27 @@
+@font-face {
+  font-family: RenaultLifeBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/RenaultLife-Bold.otf) format("opentype");
+  src: url("../fonts/RenaultLife-Bold.eot");
+  src: url("../fonts/RenaultLife-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RenaultLife-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: RenaultLifeLight;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/RenaultLife-Light.otf) format("opentype");
+  src: url("../fonts/RenaultLife-Light.eot");
+  src: url("../fonts/RenaultLife-Light.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RenaultLife-Light.woff") format("woff");
+}
+@font-face {
+  font-family: RenaultLifeRegular;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/RenaultLife-Regular.otf) format("opentype");
+  src: url("../fonts/RenaultLife-Regular.eot");
+  src: url("../fonts/RenaultLife-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RenaultLife-Regular.woff") format("woff");
+}

@@ -1,0 +1,849 @@
+body {
+	font-family: "RenaultLifeRegular", Arial, sans-serif;
+	color: #333333;
+}
+
+.text-bold {
+	font-family: "RenaultLifeBold", Arial, sans-serif;
+}
+
+.text-light {
+	font-family: "RenaultLifeLight", Arial, sans-serif;
+}
+
+.section-title {
+	font-family: "RenaultLifeLight", Arial, sans-serif;
+	font-size: 28px;
+	letter-spacing: 0.01em;
+	padding-left: 22px;
+	padding-right: 27px;
+	padding-top: 25px;
+	margin-bottom: 55px;
+}
+
+.section-title:after {
+	content: "";
+	height: 3px;
+	background-color: #ffcd00;
+	width: 84%;
+	display: block;
+	margin-top: 35px;
+	margin-left: 8%;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn {
+	letter-spacing: 0.01em;
+	border-radius: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.btn-pc {
+	background-color: #ffcd00;
+	color: #333333;
+}
+
+.btn-sc {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+
+/* Верхняя полоска-идентификатор */
+
+.header-block {
+	height: 65px;
+	display: flex;
+	align-items: center;
+}
+
+.header-block-left {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	.header-block-left {
+		flex-direction: row;
+		height: 40px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-block-left {
+		flex-direction: row;
+		height: 52px;
+	}
+}
+
+.icon-logo_AG:before {
+	content: "\e90f";
+	color: #333333;
+}
+
+.header-logo {
+	display: flex;
+	padding: 0;
+	align-items: center;
+}
+
+.header-logo a:hover,
+.header-logo a:focus {
+	text-decoration: none;
+}
+
+.header-logo span {
+	font-size: 25px;
+}
+
+@media (min-width: 768px) {
+	.header-logo span {
+		font-size: 40px;
+		vertical-align: middle;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-logo span {
+		font-size: 50px;
+		vertical-align: middle;
+	}
+}
+
+.header-slogan {
+	display: flex;
+	align-items: center;
+}
+
+.header-slogan p {
+	font-size: 9px;
+	margin-bottom: 0;
+	line-height: 10px;
+}
+
+@media (min-width: 768px) {
+	.header-slogan p {
+		font-size: 12px;
+		line-height: 14px;
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-slogan p {
+		font-size: 16px;
+		line-height: 16px;
+		margin-left: 10px;
+	}
+}
+
+.header-slogan span{
+	font-size: 11px;
+}
+
+@media (min-width: 768px) {
+	.header-slogan span {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-slogan span {
+		font-size: 22px;
+	}
+}
+
+.header-block-right {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 0;
+	padding-right: 15px;
+}
+
+.header-brand-logo {
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	.header-brand-logo img {
+		height: 40px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-brand-logo img {
+		height: 50px;
+	}
+}
+
+.header-brand-logo:after {
+	content: "";
+	border-right: 5px solid #ffcd00;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: -15px;
+}
+
+
+/* Желтая полоска с навигацией */
+
+.navbar {
+	border-radius: 0;
+}
+
+.main-nav {
+	font-size: 12px;
+}
+
+.main-nav-phone {
+	font-size: 16px;
+	letter-spacing: 0.01em;
+	padding-right: 5px;
+	margin-top: 4px;
+}
+
+.main-navbar {
+	background-color: #ffcd00;
+	margin-bottom: 0;
+	min-height: 50px;
+}
+
+.glyphicon-map-marker:hover {
+	text-decoration: none;
+}
+
+.main-nav-phone .icon-location:before {
+	content: "\e905";
+	font-size: 27px;
+	color: #333333;
+	position: relative;
+	top: 5px;
+	right: -8px;
+}
+
+
+
+/* Акция */
+
+.main-discount-banner {
+	background-image: url(/img/Renault-banner.jpg);
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 355px;
+}
+
+.sale-description-wrap{
+	padding: 0;
+}
+
+.sale-description {
+	border: 5px solid #ffcd00;
+	box-sizing: border-box;
+	margin: 15px 0;
+	letter-spacing: 0.01em;
+}
+
+.sale-text {
+	font-size: 22px;
+	margin: 0;
+	line-height: 18px;
+}
+
+.sale-profit {
+	font-size: 43px;
+	margin: 0;
+	line-height: 40px;
+}
+
+.sale-profit span {
+	text-transform: uppercase;
+}
+
+.sale-price {
+	margin: 0;
+	font-size: 60px;
+	line-height: 0;
+}
+
+.sale-price-wrap,
+.sale-text-wrap {
+	text-align: center;
+	padding: 15px;
+}
+
+.sale-text-wrap {
+	padding-bottom: 5px;
+}
+
+.sale-price-wrap .text-vertical {
+	font-size: 14px;
+	writing-mode: vertical-lr;
+	transform: scale(-1, -1);
+}
+
+
+/* Заявка для самых маленьких экранов */
+
+.main-booking {
+	background-color: #333333;
+	color: #ffffff;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.countdown-wrap,
+.main-booking-agree,
+.main-booking .form-group {
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.countdown-title {
+	font-size: 10px;
+	letter-spacing: 0.005em;
+	margin-bottom: 0;
+}
+
+.countdown {
+	line-height: 42px;
+	padding-top: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.countdown li {
+	padding: 0;
+}
+
+.countdown span {
+	font-size: 42px;
+	
+}
+
+.countdown p {
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.days_ref,
+.hours_ref,
+.minutes_ref,
+.seconds_ref {
+	text-align: center;
+}
+
+.main-booking-agree {
+	margin-top: 10px;
+	font-size: 9px;
+	letter-spacing: 0.01em;
+}
+
+.btn-booking {
+	min-height: 45px;
+}
+
+.main-booking-btn {
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.small-form-title {
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-left: 45px;
+	padding-right: 45px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.small-form-areas .form-control {
+	border-radius: 0;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	background-color: #333333;
+	min-height: 43px;
+}
+
+.small-form-areas .form-control::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+.small-form-areas .form-control::-moz-placeholder {
+	color: #ffffff;
+}
+
+.small-form-areas .form-control:-moz-placeholder {
+	color: #ffffff;
+}
+
+.small-form-areas .form-control:-ms-input-placeholder {
+	color: #ffffff;
+}
+
+
+/* Модельный ряд */
+
+.main-models-row:last-child {
+	padding-bottom: 40px;
+}
+
+.models-item {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 35px;
+}
+
+h3.item-name {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	margin: 0;
+}
+
+.item-profit {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+p.item-price {
+	font-size: 16px;
+	letter-spacing: 0.01em;
+}
+
+p.item-discount,
+p.item-preference {
+	font-size: 14px;
+	text-decoration: underline;
+	letter-spacing: 0.01em;
+	margin-bottom: 0;
+}
+
+.btn-buy,
+.btn-test {
+	font-size: 12px;
+	text-transform: uppercase;
+	min-height: 50px;
+	min-width: 125px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.btn-buy {
+	margin-right: 6px;
+}
+
+.btn-test {
+	margin-left: 6px;
+}
+
+.btn-test .glyphicon {
+	top: 2px;
+	right: -5px;
+	color: #ffcd00;
+}
+
+.btn-buy .glyphicon {
+	top: 2px;
+	right: -5px;
+}
+
+.item-discount > .glyphicon,
+.item-preference > .glyphicon {
+	top: 2px;
+	left: -2px;
+}
+
+
+/* Преимущества */
+
+.main-preferences {
+	background-image: url(/img/bg_preferences.png);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	letter-spacing: 0.01em;
+	padding: 35px 24px 47px 24px;
+}
+
+.preferences-title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.preferences-title p {
+	font-size: 18px;
+}
+
+.preferences-title-text {
+	text-transform: uppercase;
+	font-family: "RenaultLifeRegular", Arial, sans-serif;
+	font-size: 30px;
+}
+
+.preferences-item {
+	border: 3px solid #ffcd00;
+	color: #ffcd00;
+	min-height: 200px;
+	min-width: 130px;
+	padding: 18px;
+	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.preferences-item-text {
+	font-size: 18px;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	line-height: 18px;
+}
+
+.preferences-item-icon {
+	text-align: center;
+	min-height: 100px
+}
+
+.icon-garantie_zavod:before {
+	content: "\e9e4";
+	font-size: 100px;
+}
+
+.icon-pts:before {
+	content: "\e92b";
+	font-size: 90px;
+}
+
+.icon-tradein:before {
+	content: "\e90e";
+	font-size: 90px;
+}
+
+.icon-credit2:before {
+	content: "\e90a";
+	font-size: 90px;
+}
+
+
+/* Наличие */
+
+.model-selection-areas {
+	padding-left: 22px;
+	padding-right: 27px;
+}
+
+.model-selection-areas .form-group {
+	border: 2px solid #333333;
+	border-radius: 0;
+	min-height: 50px;
+	padding: 0;
+}
+
+.model-selection-areas select.form-control {
+	border: 0;
+}
+
+.main-selection-item {
+	border-bottom: 1px solid #bdbdbd;
+	margin-left: 22px;
+	margin-right: 27px;
+}
+
+.model-name,
+.model-parameter {
+	padding: 0;
+}
+
+.model-class,
+.model-engine,
+.model-hp,
+.model-gear {
+	display: inline;
+	font-size: 16px;
+	padding-right: 5px;
+	padding-left: 5px;
+	letter-spacing: 0.01em;
+}
+
+.model-engine,
+.model-gear {
+	border-left: 2px solid #333333;
+}
+
+.model-class {
+	padding-left: 0;
+}
+
+.model-name {
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 0.01em;
+}
+
+.model-gear {
+	text-transform: uppercase;
+}
+
+.model-parameter-wrap {
+	padding: 10px 27px 0 22px;
+	margin: 0;
+}
+
+.model-img-wrap {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 140px;
+	padding: 10px 5px 10px 22px;
+}
+
+.model-btn-wrap {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	min-height: 110px;
+	padding: 10px 27px 10px 5px;
+}
+
+.btn-price {
+	min-height: 50px;
+}
+
+.btn-price .glyphicon {
+	top: -2px;
+	right: -1px;
+}
+
+.pagination > li > a {
+	border: none;
+	color: #333333;
+	font-size: 16px;
+}
+
+.pagination > li > span {
+	border: none;
+	font-size: 16px;
+	color: #333333;
+	background-color: #ffcd00;
+}
+
+.pagination > li > span:hover {
+	background-color: #ffcd00;
+}
+
+
+/* Заявка */
+
+.main-request {
+	background-image: url(/img/bg_request.png);
+	background-size:cover;
+	background-position: center;
+	padding: 0;
+}
+
+.request-form-group {
+	padding: 0;
+	margin-top: 80px;
+	padding-right: 25px;
+}
+
+.request-form-group .form-control {
+	border-radius: 0;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	background-color: transparent;
+	min-height: 48px;
+}
+
+.request-form-title {
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.text-permission {
+	font-size: 10px;
+	color: #ffffff;
+	padding: 0;
+	margin-bottom: 80px;
+	margin-top: 40px;
+}
+
+
+/* Запись на тест-драйв */
+
+
+.main-tdrive-form .form-group {
+	padding-left: 22px;
+	padding-right: 27px;
+	margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+	.main-tdrive-form .form-group {
+		padding-left: 75px;
+		padding-right: 75px;
+		margin-bottom: 45px;
+	}
+}
+
+.main-tdrive-form .form-control {
+	border-radius: 0;
+	border: 2px solid #333333;
+	color: #333333;
+	background-color: #ffffff;
+	min-height: 43px;
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	.main-tdrive-form .form-control {
+		min-height: 50px;
+	}
+}
+
+.tdrive-model-selector {
+	padding-left: 75px;
+	padding-right: 75px;
+	margin-bottom: 35px;
+}
+
+.tdrive-selector {
+	width: 175px;
+	height: 130px;
+	padding: 0;
+	padding-bottom: 20px;
+	margin-right: 28px;
+	margin-bottom: 10px;
+	text-align: center;
+	display: inline-block;
+}
+
+.tdrive-selector:nth-child(3n){
+	margin-right: 0;
+}
+
+.tdrive-selector-radio {
+	display: none;
+}
+
+.tdrive-selector-label {
+	width: 100%;
+	height: 100%;
+	padding-top: 110px;
+	background: url(/img/logan_small.png) no-repeat;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.tdrive-selector-radio:checked + .tdrive-selector-label {
+	box-shadow: 3px 3px 5px #ffcd00, -3px -3px 5px #ffcd00;
+}
+
+.tdrive-attention-small {
+	padding-left: 75px;
+	padding-right: 75px;
+	margin-bottom: 35px;
+	font-size: 16px;
+}
+
+.tdrive-agree label {
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.main-tdrive-btn {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+.btn-tdrive .glyphicon {
+	top: 1px;
+	right: -70px;
+	color: #ffcd00;
+}
+
+.btn-tdrive {
+	min-height: 45px;
+	font-size: 16px;
+}
+
+
+/* Карта */
+
+.main-contacts {
+	margin-bottom: 20px;
+}
+
+.main-contacts-map {
+	padding: 0;
+}
+
+.main-address-item {
+	color: #333333;
+	letter-spacing: 0.01em;
+	padding-left: 45px;
+	padding-right: 15px;
+	padding-top: 0;
+}
+
+.main-address-item:hover {
+	background-color: #eeeeee;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.address-item-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.address-item-text {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.main-address-item .icon-location:before {
+	content: "\e905";
+	font-size: 33px;
+	color: #333333;
+	position: relative;
+	line-height: 1;
+	left: -38px;
+	top: 38px;
+}
+
+
+/* Нижняя серая полоска */
+
+.main-footer {
+	background-color: #333333;
+	padding-top: 15px;
+	padding-bottom: 35px;
+}
+
+.footer-text {
+	color: #ffffff;
+	font-size: 10px;
+}
